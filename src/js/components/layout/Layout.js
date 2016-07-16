@@ -25,6 +25,9 @@ export default class Layout extends React.Component {
   }
 
   render() {
+
+    require('../../../css/style.scss');
+
     const { user, tweets } = this.props;
     const mappedTweets = tweets.map(tweet => <li key={tweet.id}>{tweet.text}</li>)
     const contents = tweets.length ? <ul>{mappedTweets}</ul> : <button onClick={this.fetchTweets.bind(this)}>load tweets</button>
