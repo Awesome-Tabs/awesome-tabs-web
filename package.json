@@ -4,6 +4,7 @@
   "description": "Web version",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,8 +38,5 @@
     "redux-thunk": "^2.1.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server --content-base src --inline --hot"
   }
 }

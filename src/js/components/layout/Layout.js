@@ -1,8 +1,10 @@
 import React from "react"
 import { connect } from "react-redux"
 
-import { fetchUser } from "../actions/userActions"
-import { fetchTweets } from "../actions/tweetsActions"
+import { fetchUser } from "../../actions/userActions"
+import { fetchTweets } from "../../actions/tweetsActions"
+
+import Nav from "./Nav"
 
 // connect should only be placed in smart components
 @connect((store) => {
@@ -31,9 +33,12 @@ export default class Layout extends React.Component {
 
     const mappedTweets = tweets.map(tweet => <li key={tweet.id}>{tweet.text}</li>)
 
-    return <div>
-      <h1>{user.name}</h1>
-      <ul>{mappedTweets}</ul>
-    </div>
+    return (
+      <div>
+        <Nav/>
+        <h1>{user.name}</h1>
+        <ul>{mappedTweets}</ul>
+      </div>
+    )
   }
 }
