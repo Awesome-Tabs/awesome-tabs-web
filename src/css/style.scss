@@ -1,0 +1,23 @@
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.btcf:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+nav {
+  background: black;
+  color: white;
+  padding: 10px;
+  a {
+    float: right;
+    color: rgba(#00ff00,.9);
+    text-decoration: none;
+  }
+}

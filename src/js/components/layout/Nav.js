@@ -8,7 +8,10 @@ export default class Nav extends React.Component {
 
   render() {
     return (
-      <div>NAVBAR This be</div>
+      <nav className="btcf">
+        <span>NAVBAR This be</span>
+        <a href="/">Home</a>
+      </nav>
     );
   }
 }
