@@ -8,7 +8,19 @@ export default class Nav extends React.Component {
 
   render() {
     return (
-      <div>NAVBAR This be</div>
+		<div className="navbar">
+			<div className="container">
+				<div className="logo">
+					TabDuo
+				</div>
+				<div className="mid-section">
+					Mid-section
+				</div>
+				<div className="links">
+					Links
+				</div>
+			</div>
+		</div>
     );
   }
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
+    "sass-watch": "sass --watch src/stylesheets/main.scss:src/stylesheets/main.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

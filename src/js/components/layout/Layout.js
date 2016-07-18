@@ -5,6 +5,7 @@ import { fetchUser } from "../../actions/userActions"
 import { fetchTweets } from "../../actions/tweetsActions"
 
 import Nav from "./Nav"
+import SideMenu from "./SideMenu"
 
 // connect should only be placed in smart components
 @connect((store) => {
@@ -34,6 +35,7 @@ export default class Layout extends React.Component {
         <Nav/>
         <h1>{user.name}</h1>
         {contents}
+        <SideMenu />
       </div>
     )
   }
