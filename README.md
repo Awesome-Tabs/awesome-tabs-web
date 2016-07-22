@@ -1,28 +1,10 @@
-# Starter for Express, React, Redux, SCSS applications
-
-## Features
-
-- Webpack development and production environment configuration
-- Webpack SCSS configuration
-- React Hot loader
-- React Router configuration
-- React, Redux configuration
-- Testing environment configured with Mocha and Chai
-- Linting with Airbnb eslint configuration
+# Awesome Tabs Web
 
 ## Getting Started
-
-Clone Repo
-
-````
-git clone https://github.com/SyntaxChris/react-redux-express-boiler
-````
 
 npm install dependencies
 
 ````
-cd express-react-redux-starter 
-
 npm install
 ````
 
@@ -68,7 +50,7 @@ Start production server
 npm run start
 ````
 
-Note: I'm using pm2 for production server, you should install it on server via 'npm install pm2 -g'.
+Note: We're using pm2 for production server, you should install it on server via 'npm install pm2 -g'.
 if you don't want to use pm2, just change pm2 with node in package.json file in scripts section.
 
 
