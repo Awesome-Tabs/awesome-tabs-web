@@ -15,14 +15,4 @@ describe('App', () => {
   });
 });
 
-describe('Home', () => {
-  let component;
 
-  beforeEach(() => {
-    component = renderComponent(Home);
-  });
-
-  it('renders something', () => {
-    expect(component).to.exist;
-  });
-});
