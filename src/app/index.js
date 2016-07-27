@@ -15,8 +15,8 @@ import './components/bundle.scss';
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 const store = createStoreWithMiddleware(reducers);
 
-ReactDOM.render(
-  <Provider store={store}>
+const AppRoot = () => (
+	<Provider store={store}>
     <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />;
@@ -24,4 +24,6 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>
-  , document.getElementById('app-root'));
+);
+
+ReactDOM.render(<AppRoot />, document.getElementById('app-root'));
